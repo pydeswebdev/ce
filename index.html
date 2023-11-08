@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crucial Experiment</title>
+    <link rel="icon" href="assets/images/dest/CrucialExperimentLogo.png" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/css/app.min.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-mask noselect">
+        <h1 class="loader-text">please wait. page loading...</h1>
+        
+        <!-- <span class="loader"></span> -->
+
+        <div class="pyramid-loader">
+          <div class="wrapper">
+            <span class="side side1"></span>
+            <span class="side side2"></span>
+            <span class="side side3"></span>
+            <span class="side side4"></span>
+            <span class="shadow"></span>
+          </div>
+        </div>
+
+        <!-- <div id="page">
+            <div id="container">
+                <div id="ring"></div>
+                <div id="ring"></div>
+                <div id="ring"></div>
+                <div id="ring"></div>
+                <div id="h3">loading</div>
+            </div>
+        </div> -->
+
+        <!-- <div class="window">
+          <div class="window-logo">
+            <p class="window-top">Crucial</p>
+            <p class="window-mid">Experiment<span>OS</span></p>
+            <p class="window-bottom">Professional</p>
+          </div>
+          <div class="window-container">
+            <div class="window-box"></div>
+            <div class="window-box"></div>
+            <div class="window-box"></div>
+          </div>
+        </div> -->
+    </div>
+
+
+    <!-- Progress Bar -->
+    <div class="progress"></div>
+
+
+    <!-- Arrow Up -->
+    <button class="go-top-btn noselect">
+        <img src="assets/images/dest/arrow-up.png" alt="#">
+    </button>
+
+    <!-- Settings -->
+    <!-- <button class="settings-btn noselect">
+        <img src="assets/images/dest/settings.png" alt="#">
+    </button> -->
+
+
+    <!-- Settings Modal -->
+    <!-- <div class="popup-overlay popup-overlay-nactive noselect">
+        <div class="settings-popup">
+            <div class="popup-name">Settings</div>
+            <div class="popup-close"><img src="assets/images/dest/close.png" alt="#"></div>
+
+            <div class="popup-content">
+                <div class="popup-chapter">
+                    <div class="popup-title">Language</div>
+                    <div class="popup-subtitle">Let us know which language you`re most comfortable using. You can change it back at any time.</div>
+
+                    <div class="popup-dropdown">
+                        <div class="dropdown-select">
+                            <div class="selected">English</div>
+                            <div class="caret"><img src="assets/images/dest/down.png" alt="#"></div>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li>English</li>
+                            <li>Russian</li>
+                            <li>Belarusian</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-bottons">
+                <button class="button">Save</button>
+                <button class="button button-empty cancel">Cancel</button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Toast Notification -->
+    <div class="toast noselect">
+        <div class="toast-content">
+            <img class="toast-warning" src="assets/images/dest/warning.png" alt="#" draggable='false'>
+
+            <div class="toast-message">
+                <span class="text">the site is not fully ready yet, so this section of the site is not yet available</span>
+            </div>
+        </div>
+        <img class="toast-close" src="assets/images/dest/close.png" alt="#" draggable='false'>
+
+        <div class="toast-progress"></div>
+    </div>
+    
+
+    <!-- Navbar -->
+    <nav class="navbar noselect">
+        <div class="nav-container">
+            <div class="navbar__wrap">
+                <i class='bx bx-menu'></i>
+                <a class="navbar__logo" href="index.html">Crucial Experiment</a>
+
+                <ul class="navbar__menu">
+                    <li class="navbar__link">
+                        <a class="navbar__btn" href="#">Games<i class='bx bx-chevron-down'></i></a>
+
+                        <ul class="dropdown__content">
+                            <li><a href="durka.html"><img class="dropdown__content_logo" src="assets/images/dest/CrucialExperimentLogo.png" alt="">The Durka: You will (not) die</a></li>
+                            <li class="toast-dev"><a href="#"><img class="dropdown__content_logo" src="assets/images/dest/CrucialExperimentLogo.png" alt="">Durka Simulator <!-- <i class='bx bx-chevron-right' > --></i></a>
+                                <!-- <ul class="dropdown__content_next">
+                                    <li><a href="#">The Durka: You will (not) die: DLS</a></li>
+                                    <li><a href="#">Test 2</a></li>
+                                    <li><a href="#">Test 3 Lorem, ipsum</i></a></li>
+                                    <li><a href="#">Test 4</a></li>
+                                </ul> -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__link">
+                        <a class="navbar__btn" href="#">Tools<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown__content">
+                            <li class="toast-dev"><a href="#"><i class='bx bx-user-voice'></i>Voice Animate</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__link">
+                        <a class="navbar__btn" href="faq.html">FAQ</a>
+                    </li>
+                    <!-- <li class="navbar__link">
+                        <a class="navbar__btn" href="#">Testing Navbar Link</a>
+                    </li> -->
+                </ul>
+            </div>
+
+            <div class="navbar__wrap">
+                <div class="navbar__buttons">
+                    <button class="navbar__button" onclick="window.open('publishing.html', '_self');">
+                        <img src="assets/images/dest/publishing.png" alt="#">
+                    </button >
+                    <button class="navbar__button support">
+                        <img src="assets/images/dest/support.png" alt="#">
+                    </button >
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Mobile Navbar -->
+    <div class="mobile-menu noselect">
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-global">
+                <div class="mobile-menu-content">
+                    <div class="mobile-menu-section sidebar-close-section">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <div class="mobile-menu-section logo-social-section">
+                        <div class="logo">
+                            <h1>CE<span>xpertement</span></h1>
+                        </div>
+                        <div class="socials">
+                            <a href="#"><i class='bx bxl-youtube'></i></a>
+                            <a href="#"><i class='bx bxl-vk'></i></a>
+                            <a href="#"><i class='bx bxl-discord-alt'></i></a>
+                            <a href="#"><i class='bx bxl-patreon' ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu-section link-columns-section">
+                        <div class="link-column">
+                            <div class="link-chapter">
+                                <div class="link-header">Games</div>
+                                <div class="link"><i class='bx bxs-game' ></i><a href="#">The Durka: You will (not) die</a></div>
+                                <div class="link"><i class='bx bxs-game' ></i><a href="#">Durka Simulator</a></div>
+                            </div>
+                            <div class="link-chapter">
+                                <div class="link-header">Tools</div>
+                                <div class="link"><i class='bx bx-pencil' ></i><a href="#">Mod Tool</a></div>
+                                <div class="link"><i class='bx bx-user-voice'></i><a href="#">VoiceAnim</a></div>
+                            </div>
+                            <div class="link-chapter">
+                                <div class="link-header">Community</div>
+                                <div class="link"><i class='bx bxl-steam'></i><a href="#">Steam</a></div>
+                                <div class="link"><i class='bx bxl-discord-alt' ></i><a href="#">Discord Server</a></div>
+                            </div>
+                            <div class="link-chapter">
+                                <div class="link-header">News</div>
+                                <div class="link"><i class='bx bx-news' ></i><a href="#">All news</a></div>
+                            </div>
+                            <div class="link-chapter">
+                                <div class="link-header">Shop</div>
+                                <div class="link"><i class='bx bxl-steam'></i><a href="#">Steam</a></div>
+                                <div class="link"><i class='bx bx-key' ></i><a href="#">Code activation</a></div>
+                            </div>
+                            <div class="link-chapter">
+                                <div class="link-header">Publishing</div>
+                                <div class="link"><i class='bx bxl-unity'></i><a href="#">Publisher of your game</a></div>
+                            </div>
+                        </div>
+                        <div class="link-column">
+                            <div class="link-chapter">
+                                <div class="link-header">Contact us</div>
+                                <div class="link"><i class='bx bxs-contact' ></i><a href="#">Our contacts</a></div>
+                            </div>
+                            <div class="link-chapter">
+                                <div class="link-header">Press Kit</div>
+                                <div class="link"><i class='bx bx-image' ></i><a href="#">Press Kit</a></div>
+                                <div class="link"><i class='bx bx-cloud-download' ></i><a href="#">Download Press Kit</a></div>
+                            </div>
+                            <div class="link-chapter">
+                                <div class="link-header">SUPPORT</div>
+                                <div class="link"><i class='bx bx-support' ></i><a href="#">Technical support</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Banner -->
+    <section class="banner-section section noselect">
+        <div class="container">
+            <div class="banner">
+                <div class="img__group">
+                    <img class="img__group__bg" src="assets/images/dest/game_logo/library_hero_2x.jpg" draggable="false">
+                    <img class="img__group__title" src="assets/images/dest/game_logo/logo_russian_2x.png" draggable="false">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Game Statistics -->
+    <section class="game-stat section noselect">
+        <div class="container">
+            <div class="stat-bar">
+                <div class="overlay"></div>
+                <div class="ovelray-text"><h1>This game is still in development :)</h1></div>
+
+                <div class="stat-items grid">
+                    <div class="stat-item">
+                        <div class="stat-item-name">Players</div>
+                        <div class="stat-item-numb">0K+</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-item-name">Downloads</div>
+                        <div class="stat-item-numb">0K+</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-item-name">Added to wishlist</div>
+                        <div class="stat-item-numb">0K+</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-item-name">Purchases</div>
+                        <div class="stat-item-numb">0K+</div>
+                    </div>
+                </div>
+
+                <div class="stat-reviews grid">
+                    <div class="in-game">
+                        <div class="in-game-numb">0,000</div>
+                        <div class="in-game-title">In-Game</div>
+                    </div>
+                    <div class="reviews">
+                        <div class="reviews-ratio"><img src="assets/images/dest/happiness.png" alt="#">00.00%</div>
+                        <div class="reviews-group grid">
+                            <div class="reviews-positive">↑0</div>
+                            <div class="reviews-negative">↓0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DevBlog Slider -->
+    <section class="dev-blog_section section">
+            <div class="container">
+                <h1 class="section-name noselect">Our News</h1>
+                <div class="card__container_slider" id="card-slider">
+                    <div>
+                        <div class="card" onclick="window.open('https://steamcommunity.com/games/1595380/announcements/detail/3132820824649174402', '_blank');">
+                            <div class="card__cover noselect" style="background: #FFF url('...https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/40701240/816bc2f3fd5f5974de1f114b9ea88f96b0e4e9c3.png'); background-size: cover; background-position: center;"></div>
+                            <div class="card__body">
+                                <div class="card__title">DevBlog #1 - The beginning of a new story</div>
+                                <div class="card__desc">Now we want to tell you about changes in the price of the game from free to 9.99$. All players who already have it in the library will not need to buy it, but there is one limitation from Steam that you will not be able to receive trade cards and you will have to buy the game itself to get access to the cards.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card" onclick="window.open('https://steamcommunity.com/games/1595380/announcements/detail/3217269675826533207', '_blank');">
+                            <div class="card__cover noselect" style="background: #FFF url('...https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/40701240/780f5dcfe6903008c6a91a8f3ff313c5a620828e.png'); background-size: cover; background-position: center;"></div>
+                            <div class="card__body">
+                                <div class="card__title">DevBlog #2 - Pineapple Truth</div>
+                                <div class="card__desc">This time we have bad news for the players who are waiting for the game. No matter how painful it was for us, but due to the lack of team and strength, we cannot continue working on the game, so it was decided to temporarily freeze the project until better times. It seems that this break will be long.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card" onclick="window.open('https://store.steampowered.com/news/app/1595380/view/3718324925893577928', '_blank');">
+                            <div class="card__cover noselect" style="background: #FFF url('https://clan.cloudflare.steamstatic.com/images/40701240/a6e5d737cca6f3e3650a68db02a8ac6f89d6e3b1_960x311.png'); background-size: cover; background-position: center;"></div>
+                            <div class="card__body">
+                                <div class="card__title">DevBlog #3 - Are we alive?</div>
+                                <div class="card__desc">Now let's talk about the main game. We continue to work on the plot and design of the game, a lot of things had to be redone or rewritten, but we assure you it's worth it! Let's read a piece of the game script together to make sure that the developers have been doing something useful all these months.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div>
+                        <div class="card" onclick="window.open('https://steamcommunity.com/games/1595380/announcements/detail/3132820824649174402', '_blank');">
+                            <div class="card__cover noselect" style="background: #FFF url('https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/40701240/816bc2f3fd5f5974de1f114b9ea88f96b0e4e9c3.png'); background-size: cover; background-position: center;"></div>
+                            <div class="card__body">
+                                <div class="card__title">DevBlog #1 - The beginning of a new story</div>
+                                <div class="card__desc">Now we want to tell you about changes in the price of the game from free to 9.99$. All players who already have it in the library will not need to buy it, but there is one limitation from Steam that you will not be able to receive trade cards and you will have to buy the game itself to get access to the cards.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card" onclick="window.open('https://steamcommunity.com/games/1595380/announcements/detail/3217269675826533207', '_blank');">
+                            <div class="card__cover noselect" style="background: #FFF url('https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/40701240/780f5dcfe6903008c6a91a8f3ff313c5a620828e.png'); background-size: cover; background-position: center;"></div>
+                            <div class="card__body">
+                                <div class="card__title">DevBlog #2 - Pineapple Truth</div>
+                                <div class="card__desc">This time we have bad news for the players who are waiting for the game. No matter how painful it was for us, but due to the lack of team and strength, we cannot continue working on the game, so it was decided to temporarily freeze the project until better times. It seems that this break will be long.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card" onclick="window.open('https://store.steampowered.com/news/app/1595380/view/3718324925893577928', '_blank');">
+                            <div class="card__cover noselect" style="background: #FFF url('https://clan.cloudflare.steamstatic.com/images/40701240/a6e5d737cca6f3e3650a68db02a8ac6f89d6e3b1_960x311.png'); background-size: cover; background-position: center;"></div>
+                            <div class="card__body">
+                                <div class="card__title">DevBlog #3 - Are we alive?</div>
+                                <div class="card__desc">Now let's talk about the main game. We continue to work on the plot and design of the game, a lot of things had to be redone or rewritten, but we assure you it's worth it! Let's read a piece of the game script together to make sure that the developers have been doing something useful all these months.</div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div>
+                        <div class="card" onclick="window.open('https://steamcommunity.com/games/1595380/announcements/detail/3132820824649174402', '_blank');">
+                            <div class="card__cover noselect" style="background: #FFF url('https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2FsbHBhcGVyJTIwNGt8ZW58MHx8MHx8fDA%3D&w=1000&q=80'); background-size: cover; background-position: center;"></div>
+                            <div class="card__body">
+                                <div class="card__title">DevBlog #4 - The beginning of a new story *Demo</div>
+                                <div class="card__desc">Now we want to tell you about changes in the price of the game from free to 9.99$. All players who already have it in the library will not need to buy it, but there is one limitation from Steam that you will not be able to receive trade cards and you will have to buy the game itself to get access to the cards.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card" onclick="window.open('https://steamcommunity.com/games/1595380/announcements/detail/3217269675826533207', '_blank');">
+                            <div class="card__cover noselect" style="background: #FFF url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN6bX7PLVRuY9RSvLl2roObBtUEbmNPrjQEgSe-HsLIfcszD48NrVGpSmDI0lpdbwWOoN3D9qFf9ifkREmxyhUY0rwcU38ICVUzBCIykzGKvJOkG0wwq456EIXoM_v_n1Q7uVCefmfwsli4n6YknyoPiJZBhOluBmCx_927mT3ruFngx0vTRTXk4ybgg/w640-h360-rw/beeautiful-sunset-illustration-1212023.png'); background-size: cover; background-position: center;"></div>
+                            <div class="card__body">
+                                <div class="card__title">DevBlog #5 - Pineapple Truth *Demo</div>
+                                <div class="card__desc">This time we have bad news for the players who are waiting for the game. No matter how painful it was for us, but due to the lack of team and strength, we cannot continue working on the game, so it was decided to temporarily freeze the project until better times. It seems that this break will be long.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card" onclick="window.open('https://steamcommunity.com/games/1595380/partnerevents/preview/3718324925893577928', '_blank');">
+                            <div class="card__cover noselect" style="background: #FFF url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwcvQsM8-g8UhqIkYhqovspXo29w2py-MZLaIBlHXL9w6X15KhrwmQrEplNiMeVNnrkZsYznXjYFlLXwJ0a-cEI5OQv7_MUv1MF5xc434aM88hZZ-JnU-Id8EGWHOcAXCBAkEZL3VKjCWE-BtfLP7p8UoO50SZ0rOGd2OtV1gz2hDOfxd3UP6AG3TViQ/w640-h360/4k-pc-wallpaper-ai-art.webp'); background-size: cover; background-position: center;"></div>
+                            <div class="card__body">
+                                <div class="card__title">DevBlog #6 - Are we alive? *Demo</div>
+                                <div class="card__desc">This time we have bad news for the players who are waiting for the game. No matter how painful it was for us, but due to the lack of team and strength, we cannot continue working on the game, so it was decided to temporarily freeze the project until better times. It seems that this break will be long.</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    <!-- 
+    <div class="dev-blog-slider">
+        <div class="dev-blog-slider__item">
+            <img src="assets/images/dest/game_logo/capsule_616x353.jpg" alt="#">
+        </div>
+        <div class="dev-blog-slider__item">
+            <img src="assets/images/dest/game_logo/capsule_616x353.jpg" alt="#">
+        </div>
+        <div class="dev-blog-slider__item">
+            <img src="assets/images/dest/game_logo/capsule_616x353.jpg" alt="#">
+        </div>
+        <div class="dev-blog-slider__item">
+            <img src="assets/images/dest/game_logo/capsule_616x353.jpg" alt="#">
+        </div>
+    </div>
+     -->
+
+    <!-- DevBlog -->
+    <!-- <section class="dev-blog_section section">
+        <div class="container">
+            <h1 class="section-name noselect">Our News</h1>
+            <div class="card__container grid">
+                <div class="card" onclick="window.open('https://steamcommunity.com/games/1595380/announcements/detail/3132820824649174402', '_blank');">
+                    <div class="card__cover noselect" style="background: #FFF url('https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/40701240/816bc2f3fd5f5974de1f114b9ea88f96b0e4e9c3.png'); background-size: cover; background-position: center;"></div>
+                    <div class="card__body">
+                        <div class="card__title">DevBlog #1 - The beginning of a new story</div>
+                        <div class="card__desc">Now we want to tell you about changes in the price of the game from free to 9.99$. All players who already have it in the library will not need to buy it, but there is one limitation from Steam that you will not be able to receive trade cards and you will have to buy the game itself to get access to the cards.</div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="window.open('https://steamcommunity.com/games/1595380/announcements/detail/3217269675826533207', '_blank');">
+                    <div class="card__cover noselect" style="background: #FFF url('https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/40701240/780f5dcfe6903008c6a91a8f3ff313c5a620828e.png'); background-size: cover; background-position: center;"></div>
+                    <div class="card__body">
+                        <div class="card__title">DevBlog #2 - Pineapple Truth</div>
+                        <div class="card__desc">This time we have bad news for the players who are waiting for the game. No matter how painful it was for us, but due to the lack of team and strength, we cannot continue working on the game, so it was decided to temporarily freeze the project until better times. It seems that this break will be long.</div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="window.open('https://store.steampowered.com/news/app/1595380/view/3718324925893577928', '_blank');">
+                    <div class="card__cover noselect" style="background: #FFF url('https://clan.cloudflare.steamstatic.com/images/40701240/a6e5d737cca6f3e3650a68db02a8ac6f89d6e3b1_960x311.png'); background-size: cover; background-position: center;"></div>
+                    <div class="card__body">
+                        <div class="card__title">DevBlog #3 - Are we alive?</div>
+                        <div class="card__desc">Now let's talk about the main game. We continue to work on the plot and design of the game, a lot of things had to be redone or rewritten, but we assure you it's worth it! Let's read a piece of the game script together to make sure that the developers have been doing something useful all these months.</div>
+                    </div>
+                </div>
+                <button class="button noselect" onclick="window.open('https://store.steampowered.com/news/app/1595380', '_blank');">All News</button>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Games -->
+    <section class="games-section section">
+        <div class="container">
+            <h1 class="section-name noselect">Our games</h1>
+            <div class="games-cards-wrapper grid">
+                <div class="game-card" onclick="window.open('durka.html', '_self');">
+                    <div class="game-card__img">
+                        <img src="assets/images/dest/games/the-durka-logo.png" class="game-card__img-logo" alt="#">
+                        <img src="assets/images/dest/games/the-durka-cover.png" class="game-card__img-cover" alt="#">
+                    </div>
+                    <div class="game-card__text">
+                        <div class="game-card__text-heading">The Durka: You will (not) die</div>
+                        <div class="game-card__text-subheading">Visual Novel</div>
+                    </div>
+                    <div class="game-card__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" viewBox="0 0 48 48" part="icon blz-icon"><path stroke="none" d="m17.28 33.312-2.211-.913a3.804 3.804 0 0 0 1.97 1.874 3.828 3.828 0 0 0 5-2.06 3.794 3.794 0 0 0 .005-2.925 3.798 3.798 0 0 0-2.064-2.075 3.807 3.807 0 0 0-2.819-.042l2.284.944a2.815 2.815 0 1 1-2.165 5.197ZM34.4 19.36a4.528 4.528 0 0 0-4.523-4.522 4.528 4.528 0 0 0-4.523 4.523 4.528 4.528 0 0 0 4.523 4.522 4.528 4.528 0 0 0 4.523-4.522Zm-7.913-.007a3.398 3.398 0 1 1 6.795 0 3.398 3.398 0 0 1-6.795 0Z"></path><path stroke="none" d="M23.938 6C14.482 6 6.736 13.29 6 22.556l9.648 3.99a5.063 5.063 0 0 1 3.151-.879l4.29-6.218v-.088a6.796 6.796 0 0 1 6.789-6.789 6.796 6.796 0 0 1 6.788 6.789 6.796 6.796 0 0 1-6.788 6.788c-.052 0-.103 0-.154-.004l-6.12 4.367a5.1 5.1 0 0 1-5.09 5.336 5.102 5.102 0 0 1-4.994-4.092l-6.9-2.85C8.756 36.46 15.698 42 23.938 42c9.941 0 18-8.06 18-18 0-9.941-8.059-18-18-18Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">
+                          <path d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-card__img">
+                        <img src="assets/images/dest/games/durka-simulator-logo.png" class="game-card__img-logo" alt="#">
+                        <img src="assets/images/dest/games/durka-simulator-cover.png" class="game-card__img-cover" alt="#">
+                    </div>
+                    <div class="game-card__text">
+                        <div class="game-card__text-heading">Durka Simulator</div>
+                        <div class="game-card__text-subheading">Visual Novel</div>
+                    </div>
+                    <div class="game-card__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" viewBox="0 0 48 48" part="icon blz-icon"><path stroke="none" d="m17.28 33.312-2.211-.913a3.804 3.804 0 0 0 1.97 1.874 3.828 3.828 0 0 0 5-2.06 3.794 3.794 0 0 0 .005-2.925 3.798 3.798 0 0 0-2.064-2.075 3.807 3.807 0 0 0-2.819-.042l2.284.944a2.815 2.815 0 1 1-2.165 5.197ZM34.4 19.36a4.528 4.528 0 0 0-4.523-4.522 4.528 4.528 0 0 0-4.523 4.523 4.528 4.528 0 0 0 4.523 4.522 4.528 4.528 0 0 0 4.523-4.522Zm-7.913-.007a3.398 3.398 0 1 1 6.795 0 3.398 3.398 0 0 1-6.795 0Z"></path><path stroke="none" d="M23.938 6C14.482 6 6.736 13.29 6 22.556l9.648 3.99a5.063 5.063 0 0 1 3.151-.879l4.29-6.218v-.088a6.796 6.796 0 0 1 6.789-6.789 6.796 6.796 0 0 1 6.788 6.789 6.796 6.796 0 0 1-6.788 6.788c-.052 0-.103 0-.154-.004l-6.12 4.367a5.1 5.1 0 0 1-5.09 5.336 5.102 5.102 0 0 1-4.994-4.092l-6.9-2.85C8.756 36.46 15.698 42 23.938 42c9.941 0 18-8.06 18-18 0-9.941-8.059-18-18-18Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">
+                          <path d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-card__img">
+                        <div class="game-card__img-cover__overlay"></div>
+                        <div class="game-card__img-cover__content">
+                            <h1 class="cover__content-heading">It could have been your game!</h1>
+                            <button class="button">Interesting?</button>
+                        </div>
+                        <img src="assets/images/dest/games/publishing_add_cover_1.png" class="game-card__img-cover" alt="#">
+                    </div>
+                    <div class="game-card__text">
+                        <div class="game-card__text-heading">?????? ?? ????</div>
+                        <div class="game-card__text-subheading">?????? / ??????</div>
+                    </div>
+                    <div class="game-card__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" viewBox="0 0 48 48" part="icon blz-icon"><path stroke="none" d="m17.28 33.312-2.211-.913a3.804 3.804 0 0 0 1.97 1.874 3.828 3.828 0 0 0 5-2.06 3.794 3.794 0 0 0 .005-2.925 3.798 3.798 0 0 0-2.064-2.075 3.807 3.807 0 0 0-2.819-.042l2.284.944a2.815 2.815 0 1 1-2.165 5.197ZM34.4 19.36a4.528 4.528 0 0 0-4.523-4.522 4.528 4.528 0 0 0-4.523 4.523 4.528 4.528 0 0 0 4.523 4.522 4.528 4.528 0 0 0 4.523-4.522Zm-7.913-.007a3.398 3.398 0 1 1 6.795 0 3.398 3.398 0 0 1-6.795 0Z"></path><path stroke="none" d="M23.938 6C14.482 6 6.736 13.29 6 22.556l9.648 3.99a5.063 5.063 0 0 1 3.151-.879l4.29-6.218v-.088a6.796 6.796 0 0 1 6.789-6.789 6.796 6.796 0 0 1 6.788 6.789 6.796 6.796 0 0 1-6.788 6.788c-.052 0-.103 0-.154-.004l-6.12 4.367a5.1 5.1 0 0 1-5.09 5.336 5.102 5.102 0 0 1-4.994-4.092l-6.9-2.85C8.756 36.46 15.698 42 23.938 42c9.941 0 18-8.06 18-18 0-9.941-8.059-18-18-18Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">
+                          <path d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-card__img">
+                        <div class="game-card__img-cover__overlay"></div>
+                        <div class="game-card__img-cover__content">
+                            <h1 class="cover__content-heading">It could have been your game!</h1>
+                            <button class="button">Interesting?</button>
+                        </div>
+                        <img src="assets/images/dest/games/publishing_add_cover_1.png" class="game-card__img-cover" alt="#">
+                    </div>
+                    <div class="game-card__text">
+                        <div class="game-card__text-heading">?????? ?? ????</div>
+                        <div class="game-card__text-subheading">?????? / ??????</div>
+                    </div>
+                    <div class="game-card__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" viewBox="0 0 48 48" part="icon blz-icon"><path stroke="none" d="m17.28 33.312-2.211-.913a3.804 3.804 0 0 0 1.97 1.874 3.828 3.828 0 0 0 5-2.06 3.794 3.794 0 0 0 .005-2.925 3.798 3.798 0 0 0-2.064-2.075 3.807 3.807 0 0 0-2.819-.042l2.284.944a2.815 2.815 0 1 1-2.165 5.197ZM34.4 19.36a4.528 4.528 0 0 0-4.523-4.522 4.528 4.528 0 0 0-4.523 4.523 4.528 4.528 0 0 0 4.523 4.522 4.528 4.528 0 0 0 4.523-4.522Zm-7.913-.007a3.398 3.398 0 1 1 6.795 0 3.398 3.398 0 0 1-6.795 0Z"></path><path stroke="none" d="M23.938 6C14.482 6 6.736 13.29 6 22.556l9.648 3.99a5.063 5.063 0 0 1 3.151-.879l4.29-6.218v-.088a6.796 6.796 0 0 1 6.789-6.789 6.796 6.796 0 0 1 6.788 6.789 6.796 6.796 0 0 1-6.788 6.788c-.052 0-.103 0-.154-.004l-6.12 4.367a5.1 5.1 0 0 1-5.09 5.336 5.102 5.102 0 0 1-4.994-4.092l-6.9-2.85C8.756 36.46 15.698 42 23.938 42c9.941 0 18-8.06 18-18 0-9.941-8.059-18-18-18Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">
+                          <path d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-card__img">
+                        <div class="game-card__img-cover__overlay"></div>
+                        <div class="game-card__img-cover__content">
+                            <h1 class="cover__content-heading">It could have been your game!</h1>
+                            <button class="button">Interesting?</button>
+                        </div>
+                        <img src="assets/images/dest/games/publishing_add_cover_1.png" class="game-card__img-cover" alt="#">
+                    </div>
+                    <div class="game-card__text">
+                        <div class="game-card__text-heading">?????? ?? ????</div>
+                        <div class="game-card__text-subheading">?????? / ??????</div>
+                    </div>
+                    <div class="game-card__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" viewBox="0 0 48 48" part="icon blz-icon"><path stroke="none" d="m17.28 33.312-2.211-.913a3.804 3.804 0 0 0 1.97 1.874 3.828 3.828 0 0 0 5-2.06 3.794 3.794 0 0 0 .005-2.925 3.798 3.798 0 0 0-2.064-2.075 3.807 3.807 0 0 0-2.819-.042l2.284.944a2.815 2.815 0 1 1-2.165 5.197ZM34.4 19.36a4.528 4.528 0 0 0-4.523-4.522 4.528 4.528 0 0 0-4.523 4.523 4.528 4.528 0 0 0 4.523 4.522 4.528 4.528 0 0 0 4.523-4.522Zm-7.913-.007a3.398 3.398 0 1 1 6.795 0 3.398 3.398 0 0 1-6.795 0Z"></path><path stroke="none" d="M23.938 6C14.482 6 6.736 13.29 6 22.556l9.648 3.99a5.063 5.063 0 0 1 3.151-.879l4.29-6.218v-.088a6.796 6.796 0 0 1 6.789-6.789 6.796 6.796 0 0 1 6.788 6.789 6.796 6.796 0 0 1-6.788 6.788c-.052 0-.103 0-.154-.004l-6.12 4.367a5.1 5.1 0 0 1-5.09 5.336 5.102 5.102 0 0 1-4.994-4.092l-6.9-2.85C8.756 36.46 15.698 42 23.938 42c9.941 0 18-8.06 18-18 0-9.941-8.059-18-18-18Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">
+                          <path d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="test section">
+        <div class="container">
+            <dl>
+                <dt>HTML</dt>
+                <dd>Язык гипертекстовой разметки</dd>
+                <dt>CSS</dt>
+                <dd>Каскадные таблицы стилей</dd>
+                <dd>Язык для оформления HTML-документов</dd>
+            </dl>
+        </div>
+    </section> -->
+
+
+    <!-- Contact Us -->
+    <section class="form-contact-us section noselect">
+        <div class="container">
+            <div class="form-wrapper">
+                <h1 class="section-name noselect">Contact Us</h1>
+                <form action="#" id="contact-us__form">
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label">Email:<img class="required-field" src="assets/images/dest/star.png" alt="#"></label>
+                        <input id="formEmail" placeholder="lorem.ipsum@mail.ru" type="email" name="email" class="form__input _req _email" autocomplete="off">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="formPhone" class="form__label">Phone Number:<img class="required-field" src="assets/images/dest/star.png" alt="#"></label>
+                        <input id="formPhone" placeholder="+X XXX XXX XX-XX" type="tel" name="tel" class="form__input _req _tel" autocomplete="off">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label">Message:<img class="required-field" src="assets/images/dest/star.png" alt="#"></label>
+                        <textarea name="message" placeholder="Your Message..." id="formMessage" class="form__input _req"></textarea>
+                    </div>
+
+                    <div class="button-area">
+                        <button class="button noselect" type="submit">Send Message</button>
+                        <small class="noselect">*By clicking on the button, you agree to the terms of personal data processing</small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer noselect">
+            <div class="container">
+                <div class="footer-content">
+                    <h1 class="footer-logo"><a href="#">Crucial Experiment</a></h1>
+                    <ul class="footer-socials">
+                        <li class="footer-socials-item"><a href="publishing.html">Publishing</a></li>
+                        <li class="footer-socials-item"><a href="faq.html">FAQ</a></li>
+                        <li class="footer-socials-item toast-dev"><a href="#">Contact Us</a></li>
+                        <li class="footer-socials-item"><a href="press-kit.html">Press Kit</a></li>
+                    </ul>
+                    <span class="footer-copyright">© Crucial Experiment, 2023</span>
+                    <p class="footer-product">All mentioned trademarks are the property of their respective owners</p>
+                    <ul class="footer-sci">
+                        <li><a href="#"><img src="assets/images/dest/vk.png" alt="#" draggable="false"></a></li>
+                        <li><a href="#"><img src="assets/images/dest/telegram.png" alt="#" draggable="false"></a></li>
+                        <li><a href="#"><img src="assets/images/dest/discord.png" alt="#" draggable="false"></a></li>
+                        <li><a href="#"><img src="assets/images/dest/email.png" alt="#" draggable="false"></a></li>
+                    </ul>
+                    <p class="footer-prod">The site is developed with the support of <a href="https://t.me/python_design" class="footer-webdev" target="_blank">Python Design</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>
